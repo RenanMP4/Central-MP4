@@ -225,3 +225,14 @@ h2 { margin: 0; font-size: clamp(32px, 4.2vw, 52px); font-weight: 700; line-heig
 .closing-row img { width: 180px; flex: 0 0 auto; }
 .closing .cta { margin-top: 28px; }
 @media (max-width: 600px) { .closing-row { flex-direction: column; align-items: flex-start; gap: 24px; } .closing-row img { width: 130px; } }
+
+/* foco livre: imagem do lado esquerdo */
+.split-rev { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); }
+@media (max-width: 960px) {
+  .split-rev { grid-template-columns: 1fr; }
+  .split-rev .split-art { order: 2; }
+}
+/* brainrots */
+.brainrots { margin: 0; padding: 28px 24px 8px; border: 1px solid var(--line); border-radius: 22px; background: radial-gradient(70% 120% at 50% 100%, rgba(255, 31, 71, 0.18), transparent 70%), var(--surface); }
+.brainrots img { width: 100%; height: auto; display: block; }
+.brainrots img { border-radius: 14px; }
