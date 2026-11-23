@@ -236,3 +236,15 @@ h2 { margin: 0; font-size: clamp(32px, 4.2vw, 52px); font-weight: 700; line-heig
 .brainrots { margin: 0; padding: 28px 24px 8px; border: 1px solid var(--line); border-radius: 22px; background: radial-gradient(70% 120% at 50% 100%, rgba(255, 31, 71, 0.18), transparent 70%), var(--surface); }
 .brainrots img { width: 100%; height: auto; display: block; }
 .brainrots img { border-radius: 14px; }
+
+/* ---------- 2.6: modo historia ---------- */
+.kicker .new { display: inline-block; margin-right: 8px; padding: 2px 8px; border-radius: 99px; background: var(--red); color: #fff; font-size: 11px; letter-spacing: 0.08em; vertical-align: 1px; }
+#historia .shot-wide { margin-bottom: 28px; }
+.grid.grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 980px) { .grid.grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .grid.grid-4 { grid-template-columns: minmax(0, 1fr); } }
+.duo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+@media (max-width: 760px) { .duo { grid-template-columns: minmax(0, 1fr); } }
+.cell-art img { width: 100%; max-width: 220px; margin: -6px auto 6px; border-radius: 10px; }
+.log li.is-new .v { color: var(--red); }
+.log li.is-new p b { color: var(--text); }
